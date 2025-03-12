@@ -1,5 +1,5 @@
 body {
-    background: radial-gradient(circle, #1a2b3d, #4a6978, #7a9c9f, #afd0c0, #f1e5c6);
+    background: linear-gradient(0.25turn, #1a1a1a, #1e1e2a, #4f7d7d, #3e6a68, #1a1a1a);
 }
 
 .navbar ul {
