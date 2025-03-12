@@ -1,6 +1,7 @@
 body {
     background: radial-gradient(circle, #1a2b3d, #4a6978, #7a9c9f, #afd0c0, #f1e5c6);
 }
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -8,5 +9,6 @@ body {
 }
 
 h2 {
-    font-family: "Nabla" , system-ui; 
+    font-family: "Nabla" , system-ui;
+    color: #055c5c; 
 }
