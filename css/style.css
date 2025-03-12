@@ -18,6 +18,10 @@ body {
 	text-align: center;
 }
 
+navbar.li {
+    float: left;
+}
+
 /*
 li {
 
