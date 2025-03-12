@@ -1,2 +1,2 @@
-# Project1
-ITMD Project One Resume - Only utilizing HTML script.
+# Project2
+ITMD Project Two Resume - Adding CSS to our Project One.
