@@ -4,9 +4,22 @@ body {
 
 .navbar ul {
     list-style-type: none;
+    background-color: #afd0c0;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
+
+/*
+li {
+
+}
+
+a {
+
+}
+*/
+
 
 h2 {
     font-family: "Nabla" , system-ui;
