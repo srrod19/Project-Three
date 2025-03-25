@@ -1,5 +1,5 @@
 body {
-    background: radial-gradient(circle, #1f1f1f, #1d252f, #4c7b7b, #4a6c73, #497470);
+    background: radial-gradient(circle, #d9f2f0, #cee9e8, #afdfdb, #92cecb, #62bcc0);
 }
 
 .navbar ul {
@@ -52,5 +52,5 @@ h2 {
 }
 
 p {
-    font-family: "Comme", sans-serif;;
+    font-family: "Comme", sans-serif;
 }
