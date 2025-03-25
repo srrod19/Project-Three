@@ -4,7 +4,8 @@ body {
 
 .navbar ul {
     list-style-type: none;
-    background-color: #afd0c0;
+    display: inline;
+    background-color: #fde8fd;
     margin: 0;
     padding: 0;
     overflow: hidden;
