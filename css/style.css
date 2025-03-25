@@ -51,6 +51,11 @@ h2 {
     font-size: 35px;
 }
 
+h3 {
+    font-family: "Boldonse", system-ui;
+    font-style: normal;
+}
+
 p {
     font-family: "Comme", sans-serif;
 }
