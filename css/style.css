@@ -50,13 +50,17 @@ a {
 }
 */
 
-
+h1 {
+    font-family: "Boldonse", system-ui;
+    font-size: 25px;
+}
 h2 {
     font-family: "Nabla" , system-ui; 
-    font-size: 35px;
+    font-size: 15px;
 }
 
-h1 h3 {
+
+h3 {
     font-family: "Boldonse", system-ui;
     font-style: normal;
 }
