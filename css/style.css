@@ -68,6 +68,6 @@ p {
 video {
     display: inline-block;
     margin: auto;
-    width: 100%;
+    width: 50%;
     height: 50%;
 }
