@@ -2,6 +2,10 @@ body {
     background: radial-gradient(circle, #d9f2f0, #cee9e8, #afdfdb, #92cecb, #62bcc0);
 }
 
+h1 {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
 .navbar {
     background-color: #fde8fd;
 }
