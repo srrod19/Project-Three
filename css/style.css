@@ -28,10 +28,6 @@ body {
     background-color: #7e44c1;
 }
 
-.navbar li {
-    float: left;
-}
-
 ul {
 	list-style-type: none;
 	margin: 5px;
