@@ -74,6 +74,11 @@ p {
     font-family: "Comme", sans-serif;
 }
 
+iframe {
+    width: auto;
+    height: 352px;
+}
+
 video {
     display: inline-block;
     margin: auto;
