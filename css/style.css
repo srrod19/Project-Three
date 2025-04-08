@@ -40,6 +40,20 @@ ul {
     background-color: #7e44c1;
 }
 
+.hobbies {
+    column-count: 3;
+    column-gap: normal;
+}
+
+h3.hobbies {
+    font-family: "Boldonse", system-ui;
+    font-style: normal;
+    column-span: all;
+    column-rule: 4px, solid, darkcyan;
+}
+
+
+
 h1 {
     font-family: "Boldonse", system-ui;
     font-size: 25px;
@@ -59,13 +73,6 @@ h3 {
 h4 {
     font-family: "Comme", sans-serif;
 }
-
-section {
-    column-count: 4;
-    column-gap: normal;
-    
-}
-
 
 
 p {
