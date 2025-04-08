@@ -43,6 +43,7 @@ ul {
 .hobbies {
     column-count: 3;
     column-gap: normal;
+    column-rule: 4px, solid, darkcyan;
 }
 
 h3.hobbies {
