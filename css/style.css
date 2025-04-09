@@ -40,25 +40,25 @@ ul {
     background-color: #7e44c1;
 }
 
-.hobbies {
+.hobbies1 {
     column-count: 1;
-    column-gap: normal;
+    column-gap: 20px;
     column-rule: 4px, solid, darkcyan;
 }
 
 .hobbies2 {
     column-count: 3;
-    column-gap: normal;
+    column-gap: 20px;
     column-rule: 4px, solid, darkcyan;
 }
 
 .hobbies3 {
     column-count: 3;
-    column-gap: normal;
+    column-gap: 20px;
     column-rule: 4px, solid, darkcyan;
 }
 
-h3.hobbies {
+h3.hobbies1 {
     font-family: "Boldonse", system-ui;
     font-style: normal;
     column-span: all;
