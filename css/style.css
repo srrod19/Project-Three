@@ -41,7 +41,7 @@ ul {
 }
 
 .hobbies, .hobbies2, .hobbies3 {
-    column-count: 1;
+    column-count: 3;
     column-gap: normal;
     column-rule: 4px, solid, darkcyan;
 }
