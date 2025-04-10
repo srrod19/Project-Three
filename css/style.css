@@ -18,6 +18,7 @@
 	padding: 15px;
 	display: inline-block;
 	text-align: center;
+    font-size: 12px;
 }
 
 .navbar li {
@@ -132,6 +133,26 @@ img.gallary {
 /* Creating div portions for my resume page to add boxes around my information */
 
 .resume {
+    margin: 25px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 0 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.steps {
     margin: 25px;
     background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(3px);
