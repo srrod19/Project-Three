@@ -6,7 +6,7 @@ body {
     background: linear-gradient(0.25turn, #1d020f, #2b031e, #34042b, #460726, #5f0737);
 }
 
-ul.navbar {
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,7 +16,16 @@ ul.navbar {
     overflow: hidden;
 }
 
-a.navbar {
+ul {
+	list-style-type: none;
+	margin: 5px;
+    font-family: "Comme", sans-serif;
+    padding: 5px;
+	font-size: 15px;
+    color: white;
+}
+
+.navbar a {
 	color: white;
 	text-decoration: none;
 	padding: 15px;
