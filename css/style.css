@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-    background-color: #fde8fd;
+    background: linear-gradient(0.25turn, #1d020f, #2b031e, #34042b, #460726, #5f0737);
 }
 
 .navbar ul {
@@ -17,7 +17,7 @@ body {
 }
 
 .navbar a {
-	color: black;
+	color: white;
 	text-decoration: none;
 	padding: 15px;
 	display: inline-block;
@@ -37,7 +37,7 @@ ul {
 }
 
 .navbar a:hover {
-    background-color: #7e44c1;
+    background-color: #392036e8;
 }
 
 .flex-column {
