@@ -97,10 +97,10 @@ p {
 
 ul {
 	list-style-type: none;
-	margin: 5px;
+	margin: 2px;
     font-family: "Comme", sans-serif;
-    padding: 5px;
-	font-size: 15px;
+    padding: 2px;
+	font-size: 10px;
     color: white;
 }
 
@@ -118,7 +118,6 @@ video {
 
 .gallary {
     margin: 15px;
-    border: 5px solid #504bbac5;
     width: 300px;
     display: inline-block; 
     white-space: nowrap;
@@ -128,7 +127,6 @@ img.gallary {
     width: 100%;
     height: auto;
     display: block;
-    border: 5px solid #504bbac5;
 }
 
 /* Creating div portions for my resume page to add boxes around my information */
