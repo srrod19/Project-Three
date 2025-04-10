@@ -137,6 +137,7 @@ img.gallary {
     width: 100%;
     height: auto;
     display: block;
+    border: 5px solid #504bbac5;
 }
 
 /* Creating div portions for my resume page to add boxes around my information */
