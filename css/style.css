@@ -118,9 +118,10 @@ video {
 
 .gallary {
     margin: 15px;
-    border: 3px solid #92aaf9;
+    border: 5px solid #504bbac5;
     width: 300px;
-    display: block;
+    display: inline-block; 
+    white-space: nowrap;
 }
 
 img.gallary {
