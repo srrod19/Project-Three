@@ -59,6 +59,7 @@ h3.hobbies {
     font-style: normal;
     column-span: all;
     text-align: center;
+    color: black;
 }
 
 p.hobbies {
