@@ -42,11 +42,14 @@ ul {
 
 .flex-column {
     display: flex;
+    margin: 25px;
     column-gap: 20px;
 }
 
 .hobbies {
     display: flex;
+    margin: 25px;
+    padding: 45px;
     column-gap: 40px;
     column-rule: 4px, solid, darkcyan;
 }
