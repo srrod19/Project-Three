@@ -46,9 +46,8 @@ ul {
 }
 
 .hobbies {
-    column-count: 3;
-    column-gap: 20px;
     display: flex;
+    flex: 1;
     column-rule: 4px, solid, darkcyan;
 }
 
