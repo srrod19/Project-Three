@@ -6,7 +6,7 @@ body {
     background: linear-gradient(0.25turn, #1d020f, #2b031e, #34042b, #460726, #5f0737);
 }
 
-.navbar ul {
+ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,20 +16,12 @@ body {
     overflow: hidden;
 }
 
-.navbar a {
+a.navbar {
 	color: white;
 	text-decoration: none;
 	padding: 15px;
 	display: inline-block;
 	text-align: center;
-}
-
-ul {
-	list-style-type: none;
-	margin: 5px;
-    font-family: "Comme", sans-serif;
-    padding: 5px;
-	font-size: 10px;
 }
 
 .navbar li {
@@ -90,16 +82,25 @@ h2 {
 h3 {
     font-family: "Boldonse", system-ui;
     font-style: normal;
+    color: white;
 }
 
 h4 {
     font-family: "Comme", sans-serif;
+    color: white;
 }
-
 
 p {
     font-family: "Comme", sans-serif;
     color: white;
+}
+
+ul {
+	list-style-type: none;
+	margin: 5px;
+    font-family: "Comme", sans-serif;
+    padding: 5px;
+	font-size: 15px;
 }
 
 iframe {
