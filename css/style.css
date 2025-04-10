@@ -61,6 +61,11 @@ ul {
     column-rule: 4px, solid, darkcyan;
 }
 
+.flex-column {
+    display: flex;
+    column-gap: 20px;
+}
+
 h3.hobbies1 {
     font-family: "Boldonse", system-ui;
     font-style: normal;
