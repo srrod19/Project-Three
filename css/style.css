@@ -51,24 +51,12 @@ ul {
     column-rule: 4px, solid, darkcyan;
 }
 
-h3.hobbies1 {
+h3.hobbies {
     font-family: "Boldonse", system-ui;
     font-style: normal;
     column-span: all;
+    text-align: center;
 }
-
-h3.hobbies2 {
-    font-family: "Boldonse", system-ui;
-    font-style: normal;
-    column-span: all;
-}
-
-h3.hobbies3 {
-    font-family: "Boldonse", system-ui;
-    font-style: normal;
-    column-span: all;
-}
-
 
 h1 {
     font-family: "Boldonse", system-ui;
