@@ -45,14 +45,21 @@ ul {
     margin: 25px;
     column-gap: 20px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 0 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 .hobbies {
     display: flex;
-    margin: 25px;
-    padding: 45px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 12px;
     column-gap: 40px;
-    column-rule: 4px, solid, darkcyan;
 }
 
 h3.hobbies {
