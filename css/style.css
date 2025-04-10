@@ -44,6 +44,7 @@ ul {
     display: flex;
     margin: 25px;
     column-gap: 20px;
+    text-align: center;
 }
 
 .hobbies {
