@@ -40,30 +40,16 @@ ul {
     background-color: #7e44c1;
 }
 
-.hobbies1 {
-    column-count: 1;
-    column-gap: 20px;
-    display: flex;
-    column-rule: 4px, solid, darkcyan;
-}
-
-.hobbies2 {
-    column-count: 1;
-    column-gap: 20px;
-    display: flex;
-    column-rule: 4px, solid, darkcyan;
-}
-
-.hobbies3 {
-    column-count: 1;
-    column-gap: 20px;
-    display: flex;
-    column-rule: 4px, solid, darkcyan;
-}
-
 .flex-column {
     display: flex;
     column-gap: 20px;
+}
+
+.hobbies {
+    column-count: 3;
+    column-gap: 20px;
+    display: flex;
+    column-rule: 4px, solid, darkcyan;
 }
 
 h3.hobbies1 {
