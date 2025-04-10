@@ -43,21 +43,21 @@ ul {
 .hobbies1 {
     column-count: 1;
     column-gap: 20px;
-    float: left;
+    display: flex;
     column-rule: 4px, solid, darkcyan;
 }
 
 .hobbies2 {
     column-count: 1;
     column-gap: 20px;
-    float: center;
+    display: flex;
     column-rule: 4px, solid, darkcyan;
 }
 
 .hobbies3 {
     column-count: 1;
     column-gap: 20px;
-    float: right;
+    display: flex;
     column-rule: 4px, solid, darkcyan;
 }
 
