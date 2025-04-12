@@ -170,10 +170,10 @@ h3.steps {
     color: black;  
 }
 
-li.steps {
+.steps li {
     margin: 2px;
     font-family: "Comme", sans-serif;
     padding: 2px;
 	font-size: 14px;
-    color: black;
+    color: white;
 }
