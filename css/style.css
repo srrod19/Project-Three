@@ -182,4 +182,5 @@ ol li {
     font-family: "Comme", sans-serif;
 	font-size: 14px;
     color: white;
+    list-style-type: decimal;
 }
