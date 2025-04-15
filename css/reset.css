@@ -11,7 +11,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(0.25turn, #1d020f, #2b031e, #34042b, #460726, #5f0737);
+    background: radial-gradient(circle, #007a7a, #0d0d21, #004a4d, #005b80, #1a1a1a);
 }
   
 h1, h2, h3, h4, h5, h6 {
