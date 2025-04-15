@@ -1,17 +1,17 @@
-/* html {
+ html {
     box-sizing: border-box;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
 }
   *, *::before, *::after {
     box-sizing: inherit;
-  }
+}
   
   
 body {
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #d9f2f0, #cee9e8, #afdfdb, #92cecb, #62bcc0);
+    background: linear-gradient(0.25turn, #1d020f, #2b031e, #34042b, #460726, #5f0737);
 }
   
 h1, h2, h3, h4, h5, h6 {
