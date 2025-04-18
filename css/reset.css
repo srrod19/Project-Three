@@ -11,26 +11,26 @@
   
   
 body {
-    margin: 20;
-    padding: 15;
+    margin: 20px;
+    padding: 15px;
     background: radial-gradient(circle, #007a7a, #0d0d21, #004a4d, #005b80, #1a1a1a);
 }
   
 h1, h2, h3, h4, h5, h6 {
-    margin: 10;
+    margin: 10px;
     font-size: inherit;
     font-weight: inherit;
     font-family: "Boldonse", system-ui;
 }
   
 p, blockquote, pre {
-    margin: 10;
+    margin: 10px;
     font-family: "Comme", sans-serif;
 }
   
 ul, ol {
-    margin: 5;
-    padding: 5;
+    margin: 5px;
+    padding: 5px;
     list-style: none;
     font-family: "Comme", sans-serif;
 }
@@ -43,7 +43,7 @@ a {
 
 button, input, textarea, select {
     font: inherit;
-    margin: 10;
+    margin: 10px;
 }
   
 img, iframe, video {
@@ -55,7 +55,7 @@ img, iframe, video {
   
 table {
     border-collapse: collapse;
-    border-spacing: 10;
+    border-spacing: 10px;
 }
   
 :focus:not(:focus-visible) {
