@@ -187,7 +187,9 @@ ol li {
 
 /* API target on my map page */
 
-.div map {
-    
+div.map {
+    height: 50em;
+    width: 70% auto;
+    margin: 0 auto;
 }
 
