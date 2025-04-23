@@ -7,8 +7,14 @@ function initMap() {
         mapTypeId: 'roadmap'
     });
 
-map.addListener("click", (event) => {
+    new google.maps.Marker({
+        position: defaultLocation,
+        map: map,
+        title: "Default Location"
+    });
+
+    map.addListener("click", (event) => {
     addMarker(event.latLng, map);
-});
+    });
 
 }
