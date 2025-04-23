@@ -7,7 +7,6 @@ function initMap() {
         mapTypeId: 'roadmap'
     });
 
-
 map.addListener("click", (event) => {
     addMarker(event.latLng, map);
 });
