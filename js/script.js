@@ -10,11 +10,20 @@ function initMap() {
     new google.maps.Marker({
         position: defaultLocation,
         map: map,
-        title: "Default Location"
+        title: "Google Maps"
     });
 
     map.addListener("click", (event) => {
     addMarker(event.latLng, map);
     });
+
+    const infoWindow = new google.maps.InfoWindow({
+        content: '<h3>IIT Mies Campus</h3><p>Chicago, Illinois</p>'
+    });
+    
+    marker.addListener('click', () => {
+        infoWindow.open(map, marker);
+    });
+}
 
 }
