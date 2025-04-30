@@ -217,8 +217,8 @@ ol li {
 }
 
 .slide img {
-    width: auto;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 .prev-btn, .next-btn {
