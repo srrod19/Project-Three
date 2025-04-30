@@ -142,11 +142,15 @@ document.addEventListener('DOMContentLoaded', () => {
     function playCurrentVideo() {
         slides.forEach((slide, index) => {
             const video = slide.querySelector('video');
+            const playBtn = slide.querySelector('.play-btn');
+            
             if (index === currentSlide) {
                 video.play().catch(e => console.log("Autoplay prevented:", e));
+                playBtn.textContent = '⏸';
             } else {
                 video.pause();
                 video.currentTime = 0;
+                playBtn.textContent = '▶';
             }
         });
     }
