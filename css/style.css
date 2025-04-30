@@ -123,14 +123,14 @@ video {
     width: 300px;
     display: inline-block; 
     white-space: nowrap;
-    transform: scale(0.7);
+    transform: scale(0.2);
 }
 
 img.gallary {
     width: 100%;
     height: auto;
     display: block;
-    transform: scale(0.7);
+    transform: scale(0.2);
 }
 
 /* Creating div portions for my resume page to add boxes around my information */
