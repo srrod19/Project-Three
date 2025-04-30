@@ -1,5 +1,5 @@
 function initMap() {
-    const defaultLocation = { lat: 40.7128, lng: -74.0060 }; // New York City
+    const defaultLocation = { lat: 42.765128, lng: -86.107200 }; 
     
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
