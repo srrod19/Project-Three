@@ -106,8 +106,39 @@ document.addEventListener('DOMContentLoaded', () => {
         
         playCurrentVideo();
         startAutoSlide();
+        initVideoControls();
     }
-    
+    function initVideoControls() {
+        slides.forEach(slide => {
+            const video = slide.querySelector('video');
+            const playBtn = slide.querySelector('.play-btn');
+            const muteBtn = slide.querySelector('.mute-btn');
+            
+            playBtn.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                    playBtn.textContent = '⏸';
+                } else {
+                    video.pause();
+                    playBtn.textContent = '▶';
+                }
+            });
+            
+            muteBtn.addEventListener('click', () => {
+                video.muted = !video.muted;
+                muteBtn.textContent = video.muted ? '🔊' : '🔇';
+            });
+            
+            video.addEventListener('play', () => {
+                playBtn.textContent = '⏸';
+            });
+            
+            video.addEventListener('pause', () => {
+                playBtn.textContent = '▶';
+            });
+        });
+    }
+
     function playCurrentVideo() {
         slides.forEach((slide, index) => {
             const video = slide.querySelector('video');
@@ -129,10 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dot.classList.toggle('active', index === currentSlide);
         });
         
-        // Handle video playback
         playCurrentVideo();
-        
-        // Reset autoplay timer
         resetAutoSlide();
     }
     
