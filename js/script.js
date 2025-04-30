@@ -1,5 +1,5 @@
 function initMap() {
-    const defaultLocation = { lat: 42.765128, lng: -86.107200 }; 
+    const defaultLocation = { lat: 41.831296, lng: -87.627266 }; 
     
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
