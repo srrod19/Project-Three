@@ -95,18 +95,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalSlides = slides.length;
     let slideInterval;
     
-    // Initialize all videos
     function initVideos() {
         slides.forEach((slide, index) => {
             const video = slide.querySelector('video');
             const playPauseBtn = slide.querySelector('.play-pause-btn');
             const muteBtn = slide.querySelector('.mute-btn');
             
-            // Set video attributes
             video.muted = true;
             video.loop = true;
             
-            // Play/Pause button functionality
             playPauseBtn.addEventListener('click', () => {
                 if (video.paused) {
                     video.play();
@@ -117,20 +114,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            // Mute button functionality
             muteBtn.addEventListener('click', () => {
                 video.muted = !video.muted;
                 muteBtn.textContent = video.muted ? '🔊' : '🔇';
             });
             
-            // Play video when slide becomes active
             if (index === currentSlide) {
                 video.play().catch(e => console.log("Autoplay prevented:", e));
             }
         });
     }
     
-    // Create dots for navigation
     function createDots() {
         slides.forEach((_, index) => {
             const dot = document.createElement('div');
@@ -141,57 +135,48 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Go to specific slide
     function goToSlide(slideIndex) {
-        // Pause current video
         const currentVideo = slides[currentSlide].querySelector('video');
         currentVideo.pause();
         slides[currentSlide].querySelector('.play-pause-btn').textContent = '▶';
         
-        // Update current slide
         currentSlide = (slideIndex + totalSlides) % totalSlides;
         
-        // Play new video
         const newVideo = slides[currentSlide].querySelector('video');
         newVideo.play().catch(e => console.log("Autoplay prevented:", e));
         slides[currentSlide].querySelector('.play-pause-btn').textContent = '⏸';
         
         updateSlider();
     }
-    
-    // Update slider display
+   
     function updateSlider() {
         slides.forEach((slide, index) => {
             slide.classList.toggle('active', index === currentSlide);
         });
         
-        // Update dots
         const dots = document.querySelectorAll('.video-dot');
         dots.forEach((dot, index) => {
             dot.classList.toggle('active', index === currentSlide);
         });
     }
     
-    // Auto-advance slides
     function startAutoSlide() {
         clearInterval(slideInterval);
         slideInterval = setInterval(() => {
             goToSlide(currentSlide + 1);
-        }, 10000); // Change every 10 seconds
+        }, 10000); 
     }
     
-    // Event listeners
     prevBtn.addEventListener('click', () => {
         goToSlide(currentSlide - 1);
-        startAutoSlide(); // Reset timer on manual navigation
+        startAutoSlide(); 
     });
     
     nextBtn.addEventListener('click', () => {
         goToSlide(currentSlide + 1);
-        startAutoSlide(); // Reset timer on manual navigation
+        startAutoSlide(); 
     });
     
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft') {
             goToSlide(currentSlide - 1);
@@ -203,12 +188,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Initialize everything
     initVideos();
     createDots();
     startAutoSlide();
     
-    // Pause auto-advance when hovering
     slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
     slider.addEventListener('mouseleave', startAutoSlide);
 });
