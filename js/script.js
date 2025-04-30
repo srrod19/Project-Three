@@ -84,114 +84,76 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /*Slider for videos on skills page*/
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const slider = document.querySelector('.video-slider');
     const slides = document.querySelectorAll('.video-slide');
-    const prevBtn = document.querySelector('.video-prev-btn');
-    const nextBtn = document.querySelector('.video-next-btn');
-    const dotsContainer = document.querySelector('.video-dots-container');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const dotsContainer = document.querySelector('.dots-container');
     
     let currentSlide = 0;
     const totalSlides = slides.length;
     let slideInterval;
     
-    function initVideos() {
-        slides.forEach((slide, index) => {
-            const video = slide.querySelector('video');
-            const playPauseBtn = slide.querySelector('.play-pause-btn');
-            const muteBtn = slide.querySelector('.mute-btn');
-            
-            video.muted = true;
-            video.loop = true;
-            
-            playPauseBtn.addEventListener('click', () => {
-                if (video.paused) {
-                    video.play();
-                    playPauseBtn.textContent = '⏸';
-                } else {
-                    video.pause();
-                    playPauseBtn.textContent = '▶';
-                }
-            });
-            
-            muteBtn.addEventListener('click', () => {
-                video.muted = !video.muted;
-                muteBtn.textContent = video.muted ? '🔊' : '🔇';
-            });
-            
-            if (index === currentSlide) {
-                video.play().catch(e => console.log("Autoplay prevented:", e));
-            }
-        });
-    }
-    
-    function createDots() {
+    function initSlider() {
         slides.forEach((_, index) => {
             const dot = document.createElement('div');
-            dot.classList.add('video-dot');
+            dot.classList.add('dot');
             if (index === currentSlide) dot.classList.add('active');
             dot.addEventListener('click', () => goToSlide(index));
             dotsContainer.appendChild(dot);
         });
+        
+        playCurrentVideo();
+        startAutoSlide();
+    }
+    
+    function playCurrentVideo() {
+        slides.forEach((slide, index) => {
+            const video = slide.querySelector('video');
+            if (index === currentSlide) {
+                video.play().catch(e => console.log("Autoplay prevented:", e));
+            } else {
+                video.pause();
+                video.currentTime = 0;
+            }
+        });
     }
     
     function goToSlide(slideIndex) {
-        const currentVideo = slides[currentSlide].querySelector('video');
-        currentVideo.pause();
-        slides[currentSlide].querySelector('.play-pause-btn').textContent = '▶';
-        
         currentSlide = (slideIndex + totalSlides) % totalSlides;
         
-        const newVideo = slides[currentSlide].querySelector('video');
-        newVideo.play().catch(e => console.log("Autoplay prevented:", e));
-        slides[currentSlide].querySelector('.play-pause-btn').textContent = '⏸';
+        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
         
-        updateSlider();
-    }
-   
-    function updateSlider() {
-        slides.forEach((slide, index) => {
-            slide.classList.toggle('active', index === currentSlide);
-        });
-        
-        const dots = document.querySelectorAll('.video-dot');
-        dots.forEach((dot, index) => {
+        document.querySelectorAll('.dot').forEach((dot, index) => {
             dot.classList.toggle('active', index === currentSlide);
         });
+        
+        // Handle video playback
+        playCurrentVideo();
+        
+        // Reset autoplay timer
+        resetAutoSlide();
     }
     
     function startAutoSlide() {
-        clearInterval(slideInterval);
         slideInterval = setInterval(() => {
             goToSlide(currentSlide + 1);
-        }, 10000); 
+        }, 5000);
     }
     
-    prevBtn.addEventListener('click', () => {
-        goToSlide(currentSlide - 1);
-        startAutoSlide(); 
-    });
+    function resetAutoSlide() {
+        clearInterval(slideInterval);
+        startAutoSlide();
+    }
     
-    nextBtn.addEventListener('click', () => {
-        goToSlide(currentSlide + 1);
-        startAutoSlide(); 
-    });
+    prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+    nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
     
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-            goToSlide(currentSlide - 1);
-            startAutoSlide();
-        }
-        if (e.key === 'ArrowRight') {
-            goToSlide(currentSlide + 1);
-            startAutoSlide();
-        }
+        if (e.key === 'ArrowLeft') goToSlide(currentSlide - 1);
+        if (e.key === 'ArrowRight') goToSlide(currentSlide + 1);
     });
     
-    initVideos();
-    createDots();
-    startAutoSlide();
-    
-    slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
-    slider.addEventListener('mouseleave', startAutoSlide);
+    initSlider();
 });
