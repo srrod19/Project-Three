@@ -197,7 +197,7 @@ ol li {
 
 .slider-container {
     position: relative;
-    max-width: 800px;
+    max-width: 300px;
     margin: 0 auto;
     overflow: hidden;
 }
